@@ -1,8 +1,17 @@
-У вас проблемы с установкой Mivio Linux? Не проблема! Я второй разработчик Mivio Linux! Мы написали автоматический скрипт который устанавливает наш дистрибутив!
-Как установить: загрузиться ИМЕННО в void linux liveCD
-                посмотреть как называется диск: lsblk
-                написать: sudo xbps-install git
-                написать: git clone https://github.com/miviolinuxsecdeveloper/Mivio-Script-install-FIX/install.sh
-                зайти в директорию (можно посмотреть через ls)
-                написать: sudo sh install.sh
-                Вы запустили скрипт!
+Вариант 1: Клонировать весь репозиторий
+git clone https://github.com/miviolinuxsecdeveloper/Mivio-Script-install-FIX.git
+cd Mivio-Script-install-FIX
+chmod +x install.sh
+sudo ./install.sh
+
+Вариант 2: Скачать только скрипт (без git)
+curl -L -o install.sh https://raw.githubusercontent.com/miviolinuxsecdeveloper/Mivio-Script-install-FIX/main/install.sh
+# или
+wget https://raw.githubusercontent.com/miviolinuxsecdeveloper/Mivio-Script-install-FIX/main/install.sh
+chmod +x install.sh
+sudo ./install.sh
+
+Вариант 3: Запустить напрямую
+bash <(curl -s https://raw.githubusercontent.com/miviolinuxsecdeveloper/Mivio-Script-install-FIX/main/install.sh)
+# или
+curl -s https://raw.githubusercontent.com/miviolinuxsecdeveloper/Mivio-Script-install-FIX/main/install.sh | sudo bash
