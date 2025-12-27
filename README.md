@@ -5,9 +5,9 @@ chmod +x install.sh
 sudo ./install.sh
 
 Вариант 2: Скачать только скрипт (без git)
-curl -L -o install.sh https://raw.githubusercontent.com/miviolinuxsecdeveloper/Mivio-Script-install-FIX/main/install.sh
+curl -L -o install.sh https://raw.githubusercontent.com/miviolinuxsecdeveloper/Mivio-Script-install-FIX/install.sh
 # или
-wget https://raw.githubusercontent.com/miviolinuxsecdeveloper/Mivio-Script-install-FIX/main/install.sh
+wget https://raw.githubusercontent.com/miviolinuxsecdeveloper/Mivio-Script-install-FIX/install.sh
 chmod +x install.sh
 sudo ./install.sh
 
